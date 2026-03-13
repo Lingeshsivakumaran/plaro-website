@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact PLARO — Get In Touch</title>
+    <meta name="description" content="Get in touch with PLARO to transform your future and start the conversation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Specific styles for Contact page layouts */
+        .contact-header {
+            padding: 160px 24px 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .contact-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .contact-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-section {
+            padding: 40px 0 120px;
+        }
+
+        /* Reveal animation for cards */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                <span class="logo-text">PLARO</span>
+                <span class="logo-badge">Beta</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#taiken">Taiken</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="index.html#positioning" class="nav-cta">Investor Deck →</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BACKGROUND ORBS -->
+    <div class="hero-bg" style="position: fixed; z-index: -1;">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- CONTACT HEADER -->
+    <header class="contact-header reveal">
+        <div class="container">
+            <h1 class="contact-title">Get In <span class="gradient-text">Touch</span></h1>
+            <p class="contact-subtitle">Ready to transform your future? Let's start the conversation.</p>
+        </div>
+    </header>
+
+    <!-- CONTACT GRID SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid reveal">
+
+                <!-- Left Column: Contact Form -->
+                <div class="contact-card">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email address"
+                                required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="Tell us about your needs..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <span style="margin-left:8px;">✉</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Connect With Us -->
+                <div class="contact-card contact-card-info">
+                    <h3 class="feature-title" style="margin-bottom: 30px;">Connect With Us</h3>
+
+                    <ul class="contact-info-list">
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon">✉</div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p>proeduvate@gmail.com</p>
+                            </div>
+                        </li>
+
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon">🎓</div>
+                            <div class="contact-info-text">
+                                <h4>Incubation Centers</h4>
+                                <p>Agni College of Technology<br>Anna University</p>
+                            </div>
+                        </li>
+
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-text">
+                                <h4>Address</h4>
+                                <p>No.6, Thayagam Street, Kovalam road,<br>Mamallapuram, Chengalpattu – 603104,<br>Tamil
+                                    Nadu, India</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="social-links">
+                        <span>Follow Us</span>
+                        <a href="#" class="social-icon">📷</a> <!-- Instagram placeholder -->
+                        <a href="#" class="social-icon">🐦</a> <!-- Twitter placeholder -->
+                        <a href="#" class="social-icon">📘</a> <!-- Facebook placeholder -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">PLARO</span>
+                    <p>AI-Powered Career-Focused<br />Social Learning Platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#taiken">Taiken</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 PLARO. All rights reserved.</span>
+                <span class="footer-dot">·</span>
+                <span>Built to transform education into careers.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Simple reveal animation script for about page elements
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+        });
+    </script>
+</body>
+
+</html>

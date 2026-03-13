@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About PLARO — Bridging Education and Industry</title>
+    <meta name="description"
+        content="PLARO is an AI-powered social learning platform where students learn, practice, showcase skills, and unlock real career opportunities." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Specific styles for About page layouts to match ProEduvate structures */
+        .about-header {
+            padding: 160px 24px 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .about-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .journey-section {
+            background: var(--gradient-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            margin: 60px 0;
+        }
+
+        .journey-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(99, 102, 241, 0.03);
+            backdrop-filter: blur(10px);
+            z-index: 0;
+        }
+
+        .journey-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .journey-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #fff;
+        }
+
+        .journey-text {
+            font-size: 18px;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .core-values-section {
+            padding: 60px 0 120px;
+        }
+
+        .value-icon {
+            font-size: 42px;
+            margin-bottom: 16px;
+            text-align: center;
+            display: block;
+            animation: pulse 4s ease-in-out infinite alternate;
+        }
+
+        .value-title {
+            text-align: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.4));
+            }
+
+            100% {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.6));
+            }
+        }
+
+        /* Reveal animation for cards */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                <span class="logo-text">PLARO</span>
+                <span class="logo-badge">Beta</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#taiken">Taiken</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="index.html#positioning" class="nav-cta">Investor Deck →</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BACKGROUND ORBS -->
+    <div class="hero-bg" style="position: fixed; z-index: -1;">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ABOUT HEADER (ProEduvate Header Style) -->
+    <header class="about-header reveal">
+        <div class="container">
+            <h1 class="about-title">About <span class="gradient-text">PLARO</span></h1>
+            <p class="about-subtitle">An innovative career ecosystem bridging the gap between passive education and
+                real-world industry.</p>
+        </div>
+    </header>
+
+    <!-- MISSION & VISION (ProEduvate 2-Column Card Style) -->
+    <section class="features-section">
+        <div class="container">
+            <div class="feature-row-2 reveal">
+
+                <!-- Mission Card -->
+                <div class="feature-card feature-accent">
+                    <div class="feature-icon-wrap" style="text-align: center;">
+                        <div class="feature-icon">🎯</div>
+                    </div>
+                    <h3 class="feature-title" style="text-align: center;">Our Mission</h3>
+                    <p class="feature-tagline" style="text-align: center; margin-bottom: 20px;">Empowering students for
+                        the workforce</p>
+                    <p style="color: var(--text-secondary); text-align: justify; line-height: 1.7;">
+                        To empower students for the workforce through innovative experiential learning and AI-driven
+                        skill development programs. We help companies find skilled, verified talent that matches their
+                        exact workflow needs, creating a seamless connection between academic excellence and industry
+                        requirements without the noise.
+                    </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap" style="text-align: center;">
+                        <div class="feature-icon">💡</div>
+                    </div>
+                    <h3 class="feature-title" style="text-align: center;">Our Vision</h3>
+                    <p class="feature-tagline" style="text-align: center; margin-bottom: 20px;">Transforming global
+                        workforce readiness</p>
+                    <p style="color: var(--text-secondary); text-align: justify; line-height: 1.7;">
+                        To become the leading platform for career-focused social learning, fostering innovation,
+                        continuous growth, and authentic reputation. We envision a future where every student is
+                        industry-ready by deploying micro-simulations, and every enterprise has instant access to
+                        provably exceptional talent.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR JOURNEY (ProEduvate Full-Width Highlight Section) -->
+    <section class="journey-section reveal">
+        <div class="container">
+            <div class="journey-content">
+                <h2 class="journey-title">Our Journey</h2>
+                <p class="journey-text">
+                    PLARO was founded with a singular, unyielding vision: to completely eliminate the gap between what
+                    universities teach and what modern tech companies demand. We recognized that passive video learning
+                    and mindless scroll-feeds weren't creating professionals; they were creating distractions.
+                </p>
+                <p class="journey-text">
+                    Our team combines deep technological expertise with a profound understanding of educational
+                    psychology. By leveraging cutting-edge AI via PEARL and immersive case-simulations via Taiken, we
+                    aren't just another EdTech platform—we are the definitive strategic partner in career empowerment
+                    and workforce transformation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE VALUES (ProEduvate 4-Column Card Style) -->
+    <section class="core-values-section reveal">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <p class="section-eyebrow">Our Pillars</p>
+                <h2 class="section-title" style="font-size: 36px;">Core Values</h2>
+            </div>
+
+            <div class="feature-row-4">
+
+                <!-- Value 1 -->
+                <div class="feature-card" style="padding: 30px 20px;">
+                    <span class="value-icon">🚀</span>
+                    <h3 class="value-title">Innovation</h3>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="feature-card feature-accent" style="padding: 30px 20px;">
+                    <span class="value-icon">📚</span>
+                    <h3 class="value-title">Learning</h3>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="feature-card" style="padding: 30px 20px;">
+                    <span class="value-icon">📈</span>
+                    <h3 class="value-title">Growth</h3>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="feature-card feature-accent" style="padding: 30px 20px;">
+                    <span class="value-icon">⚡</span>
+                    <h3 class="value-title">Digital Empowerment</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">PLARO</span>
+                    <p>AI-Powered Career-Focused<br />Social Learning Platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#pearl">PEARL AI</a>
+                    <a href="index.html#taiken">Taiken</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 PLARO. All rights reserved.</span>
+                <span class="footer-dot">·</span>
+                <span>Built to transform education into careers.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Simple reveal animation script for about page elements
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+        });
+    </script>
+</body>
+
+</html>
