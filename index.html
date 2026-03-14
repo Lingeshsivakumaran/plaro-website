@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PLARO — AI-Powered Career-Focused Social Learning Platform</title>
+  <title>PLARO — Turn Your College Years Into a Career</title>
   <meta name="description"
-    content="PLARO is an AI-powered social learning platform where students learn, practice, showcase skills, and unlock real career opportunities." />
+    content="PLARO is where high school and college students learn real skills, practice through career simulations, build a portfolio, and land real opportunities — all in one place." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -26,12 +26,13 @@
       </a>
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#taiken">Taiken</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#taiken">Taiken</a></li>
+        <li><a href="#for-you">For You</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <a href="index.html#positioning" class="nav-cta">Investor Deck →</a>
+        <a href="#waitlist" class="nav-cta">Join Waitlist →</a>
         <button class="mobile-toggle" aria-label="Toggle menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -52,35 +53,33 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="pulse-dot"></span>
-        AI-Powered · Career-Focused · Social Learning
+        Built for students in India · Pre-launch
       </div>
       <h1 class="hero-title">
-        The Platform Where<br />
-        <span class="gradient-text">Learning Becomes</span><br />
-        a Career.
+        Stop Learning.<br />
+        <span class="gradient-text">Start Becoming.</span>
       </h1>
       <p class="hero-subtitle">
-        PLARO is not just an app — it is a full career ecosystem.
-        Learn. Practice. Showcase. Earn.
+        PLARO is where high school and college students learn real skills, practice through career simulations, build a portfolio, and land real opportunities — all in one place. No fluff, no distraction.
       </p>
       <div class="hero-actions">
-        <a href="#features" class="btn btn-primary">Explore Features</a>
-        <a href="#positioning" class="btn btn-ghost">Our Vision →</a>
+        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#features" class="btn btn-ghost">See How It Works →</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num">11</span>
-          <span class="stat-label">Core Features</span>
+          <span class="stat-label">Career Features</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num">1 AI</span>
-          <span class="stat-label">Mentor Engine</span>
+          <span class="stat-num">PEARL</span>
+          <span class="stat-label">AI Mentor Engine</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num">∞</span>
-          <span class="stat-label">Career Paths</span>
+          <span class="stat-num">1</span>
+          <span class="stat-label">Platform. Endless paths.</span>
         </div>
       </div>
     </div>
@@ -90,13 +89,117 @@
     </div>
   </section>
 
+  <!-- THE PROBLEM -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <p class="section-eyebrow">The Problem</p>
+      <h2 class="section-title">A degree alone <span class="gradient-text">isn't enough</span> anymore</h2>
+
+      <div class="problem-stat-row">
+        <div class="problem-stat-card">
+          <div class="problem-stat-num">51.3%</div>
+          <div class="problem-stat-label">of Indian engineering graduates are not employable for any job</div>
+          <div class="problem-stat-source">Source: NASSCOM / India Skills Report</div>
+        </div>
+        <div class="problem-stat-card">
+          <div class="problem-stat-num">3 yrs</div>
+          <div class="problem-stat-label">average time for a fresh graduate to become industry-ready after college</div>
+          <div class="problem-stat-source">Source: FICCI Higher Education Report</div>
+        </div>
+        <div class="problem-stat-card">
+          <div class="problem-stat-num">93%</div>
+          <div class="problem-stat-label">of employers say college curricula don't match real-world job requirements</div>
+          <div class="problem-stat-source">Source: Aspiring Minds National Employability Report</div>
+        </div>
+      </div>
+
+      <div class="problem-divider">
+        <p>Students are spending years learning things that don't translate into jobs. <strong>PLARO bridges that gap</strong> — by making career-ready skill development the entire product, not an afterthought.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR STUDENTS / FOR COMPANIES TABS -->
+  <section class="for-students-section" id="for-you">
+    <div class="container">
+      <p class="section-eyebrow">Who It's For</p>
+      <h2 class="section-title" style="margin-bottom: 40px;">Built for <span class="gradient-text">both sides</span> of the career gap</h2>
+
+      <div class="audience-tabs">
+        <button class="audience-tab active" onclick="switchTab('students')">🎓 For Students</button>
+        <button class="audience-tab" onclick="switchTab('companies')">🏢 For Companies</button>
+      </div>
+
+      <div class="audience-panel active" id="panel-students">
+        <div class="audience-card">
+          <div class="audience-card-icon">🎯</div>
+          <div>
+            <div class="audience-card-title">Learn what actually gets you hired</div>
+            <div class="audience-card-desc">PEARL AI curates content based on your domain, skill level, and career goals — not what's trending. No distractions, only growth.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">🎮</div>
+          <div>
+            <div class="audience-card-title">Practice real job scenarios before your first interview</div>
+            <div class="audience-card-desc">Taiken simulations put you in real workplace situations — product decisions, client pitches, engineering tradeoffs — so you're ready before day one.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">💼</div>
+          <div>
+            <div class="audience-card-title">Build a portfolio that speaks louder than your GPA</div>
+            <div class="audience-card-desc">Showcase your projects, skills, and Taiken scores on your PLARO profile. Let your work — not just your degree — open doors.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">💰</div>
+          <div>
+            <div class="audience-card-title">Start earning while you're still in college</div>
+            <div class="audience-card-desc">As your profile rank grows, PLARO surfaces freelance and part-time opportunities matched to your verified skills.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="audience-panel" id="panel-companies">
+        <div class="audience-card">
+          <div class="audience-card-icon">🔍</div>
+          <div>
+            <div class="audience-card-title">Find pre-vetted talent instantly</div>
+            <div class="audience-card-desc">Every student on PLARO has a verified skill profile built from real simulations and educator-rated content — not just self-reported experience.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">📊</div>
+          <div>
+            <div class="audience-card-title">Hire for workflow fit, not just credentials</div>
+            <div class="audience-card-desc">Filter candidates by domain, Taiken simulation scores, and Plaro Points. Know they can actually do the job before the first interview.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">⚡</div>
+          <div>
+            <div class="audience-card-title">Reduce onboarding time dramatically</div>
+            <div class="audience-card-desc">Students who have practiced real scenarios through Taiken require significantly less ramp-up time — they know how the workplace works before they arrive.</div>
+          </div>
+        </div>
+        <div class="audience-card">
+          <div class="audience-card-icon">🤝</div>
+          <div>
+            <div class="audience-card-title">Post freelance tasks and part-time projects</div>
+            <div class="audience-card-desc">Access a pipeline of motivated, skilled student talent for short-term work — at a fraction of the cost of traditional hiring.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES INTRO -->
   <section class="section-intro" id="features">
     <div class="container">
       <p class="section-eyebrow">Platform Features</p>
-      <h2 class="section-title">Everything built for <span class="gradient-text">growth</span></h2>
-      <p class="section-desc">Every feature on PLARO is deliberately designed to move students from passive learners to
-        skilled, hire-ready professionals.</p>
+      <h2 class="section-title">Everything built for <span class="gradient-text">your career</span></h2>
+      <p class="section-desc">Every feature on PLARO is deliberately designed to move students from passive learners to skilled, hire-ready professionals.</p>
     </div>
   </section>
 
@@ -111,14 +214,13 @@
             <span class="feature-num">01</span>
             <span class="feature-tag">AI Engine</span>
           </div>
-          <h3 class="feature-title">AI Personalization Engine — <span class="highlight">PEARL</span></h3>
-          <p class="feature-tagline">Your career mentor, built into the app</p>
+          <h3 class="feature-title">Your personal AI career mentor — <span class="highlight">PEARL</span></h3>
+          <p class="feature-tagline">Not just recommendations. A mentor that knows where you're going.</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Learns user interests, domains, and skill level</li>
-            <li><span class="check">✦</span> Curates only useful, educational content</li>
-            <li><span class="check">✦</span> Recommends relevant posts, Bytes, Taiken simulations & skill challenges
-            </li>
-            <li><span class="check">✦</span> Suggests freelancing opportunities as profile rank increases</li>
+            <li><span class="check">✦</span> Learns your interests, domain, and current skill level</li>
+            <li><span class="check">✦</span> Curates only relevant, high-quality educational content</li>
+            <li><span class="check">✦</span> Recommends Taiken simulations and skill challenges matched to your goals</li>
+            <li><span class="check">✦</span> Unlocks freelancing opportunities as your profile rank grows</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
@@ -143,9 +245,8 @@
         </div>
       </div>
 
-      <!-- Feature 2 & 3 — side by side -->
+      <!-- Feature 2 & 3 -->
       <div class="feature-row-2">
-
         <div class="feature-card" data-index="02">
           <div class="feature-meta">
             <span class="feature-num">02</span>
@@ -154,15 +255,15 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">⭐</div>
           </div>
-          <h3 class="feature-title">Educational Content Rating System</h3>
-          <p class="feature-tagline">Authenticity over virality</p>
+          <h3 class="feature-title">Content you can actually trust</h3>
+          <p class="feature-tagline">Verified by real educators, not just algorithms</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Verified teaching professionals rate content for accuracy</li>
-            <li><span class="check">✦</span> Higher-rated content gets more reach & priority in AI recs</li>
+            <li><span class="check">✦</span> Teaching professionals rate content for accuracy and quality</li>
+            <li><span class="check">✦</span> Higher-rated content gets more reach — authenticity wins, not virality</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Trustworthy learning ecosystem.</span>
+            <span class="outcome-text">A trustworthy learning ecosystem.</span>
           </div>
         </div>
 
@@ -174,43 +275,40 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">🏆</div>
           </div>
-          <h3 class="feature-title">Profile Ranking & Plaro Points</h3>
-          <p class="feature-tagline">Skill-based reputation system</p>
+          <h3 class="feature-title">A rank that reflects your real skills</h3>
+          <p class="feature-tagline">Plaro Points — earned by doing, not scrolling</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Earn points for quality educational content</li>
-            <li><span class="check">✦</span> Verified educator ratings increase rank</li>
-            <li><span class="check">✦</span> Community contribution drives growth</li>
+            <li><span class="check">✦</span> Earn points for quality content, completed simulations, and community contribution</li>
+            <li><span class="check">✦</span> Higher rank = more visibility, more opportunities, more credibility</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
             <span class="outcome-text">Motivation to learn, teach, and build — not scroll.</span>
           </div>
         </div>
-
       </div>
 
-      <!-- Feature 4 — Taiken Hero -->
+      <!-- Feature 4 — Taiken -->
       <div class="feature-card feature-taiken-card" id="taiken" data-index="04">
         <div class="feature-card-inner">
           <div class="feature-meta">
             <span class="feature-num">04</span>
             <span class="feature-tag">Experiential Learning</span>
           </div>
-          <h3 class="feature-title">Taiken — <span class="highlight">Experiential Learning Mode</span></h3>
-          <p class="feature-tagline">Learn by doing, not watching</p>
+          <h3 class="feature-title">Practice real jobs before you have one — <span class="highlight">Taiken</span></h3>
+          <p class="feature-tagline">Interactive career simulations. Story-based. AI-tailored to you.</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Story-based, interactive simulations with real-world professional scenarios
-            </li>
-            <li><span class="check">✦</span> Strategy, decision-making, and problem-solving experiences</li>
-            <li><span class="check">✦</span> AI-tailored Taikens based on interests, skill level, and career goals</li>
+            <li><span class="check">✦</span> Real-world professional scenarios: product decisions, startup crises, design reviews</li>
+            <li><span class="check">✦</span> Strategy, decision-making, and problem-solving — not multiple choice theory</li>
+            <li><span class="check">✦</span> AI picks Taikens matched to your domain, level, and goals</li>
           </ul>
           <div class="taiken-creation-block">
-            <div class="tcb-label">Taiken Creation</div>
-            <p>Users create full simulations, publish them, and earn ratings & Plaro Points.</p>
+            <div class="tcb-label">Create & Earn</div>
+            <p>Users build and publish their own simulations, earn ratings and Plaro Points from the community.</p>
           </div>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Hands-on career readiness.</span>
+            <span class="outcome-text">Hands-on career readiness. Before day one.</span>
           </div>
         </div>
         <div class="feature-visual taiken-visual">
@@ -240,7 +338,6 @@
 
       <!-- Feature 5 & 6 -->
       <div class="feature-row-2">
-
         <div class="feature-card" data-index="05">
           <div class="feature-meta">
             <span class="feature-num">05</span>
@@ -249,15 +346,15 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">🎮</div>
           </div>
-          <h3 class="feature-title">Short Taikens (Stories)</h3>
+          <h3 class="feature-title">Short Taikens — bite-sized career practice</h3>
           <p class="feature-tagline">Micro-learning, RPG-style</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Short Taiken stories as videos with mini scenarios & quick challenges</li>
-            <li><span class="check">✦</span> Decision-based learning — interactive and immersive</li>
+            <li><span class="check">✦</span> Quick scenario videos with instant decision challenges</li>
+            <li><span class="check">✦</span> Learn in 5 minutes, apply for life</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Learning that fits modern attention spans.</span>
+            <span class="outcome-text">Learning that fits your schedule.</span>
           </div>
         </div>
 
@@ -269,23 +366,21 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">⚡</div>
           </div>
-          <h3 class="feature-title">Bytes — Searchable Educational Reels</h3>
-          <p class="feature-tagline">Short-form learning, done right</p>
+          <h3 class="feature-title">Bytes — short videos that actually teach</h3>
+          <p class="feature-tagline">Like Reels, but every video makes you smarter</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Educational reels only — fully searchable by topic, skill, or domain</li>
-            <li><span class="check">✦</span> Zero algorithmic noise or random entertainment</li>
+            <li><span class="check">✦</span> Educational reels only — searchable by topic, skill, or domain</li>
+            <li><span class="check">✦</span> No entertainment, no memes, no rabbit holes</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Fast, focused knowledge discovery.</span>
+            <span class="outcome-text">Fast, focused knowledge — every scroll counts.</span>
           </div>
         </div>
-
       </div>
 
       <!-- Feature 7 & 8 -->
       <div class="feature-row-2">
-
         <div class="feature-card feature-accent" data-index="07">
           <div class="feature-meta">
             <span class="feature-num">07</span>
@@ -294,15 +389,15 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">🎯</div>
           </div>
-          <h3 class="feature-title">Domain-Based Content Control</h3>
-          <p class="feature-tagline">Users choose what they want to grow in</p>
+          <h3 class="feature-title">You choose what you want to grow in</h3>
+          <p class="feature-tagline">Your feed, your career path</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Select domains: Tech, Business, Design, Finance, Research</li>
-            <li><span class="check">✦</span> Feed and Taikens adapt automatically</li>
+            <li><span class="check">✦</span> Pick your domains: Tech, Business, Design, Finance, Research</li>
+            <li><span class="check">✦</span> Your feed and Taiken recommendations adapt automatically</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Personalized learning journey.</span>
+            <span class="outcome-text">A learning journey that's yours, not everyone's.</span>
           </div>
           <div class="domain-chips">
             <div class="chip">Tech</div>
@@ -321,24 +416,22 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">💼</div>
           </div>
-          <h3 class="feature-title">Project Showcase & Portfolio Pages</h3>
-          <p class="feature-tagline">Your work, professionally presented</p>
+          <h3 class="feature-title">A portfolio that proves what you can do</h3>
+          <p class="feature-tagline">Show work, not just certificates</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> List projects and design custom portfolio pages</li>
-            <li><span class="check">✦</span> Showcase skills, tools, and outcomes</li>
+            <li><span class="check">✦</span> Showcase projects, skills, and Taiken scores professionally</li>
             <li><span class="check">✦</span> Pitch ideas directly to investors and collaborators</li>
+            <li><span class="check">✦</span> Let your work speak before your resume does</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
             <span class="outcome-text">Students don't just learn — they prove.</span>
           </div>
         </div>
-
       </div>
 
-      <!-- Feature 9, 10, 11 — Triple Row -->
+      <!-- Feature 9, 10, 11 -->
       <div class="feature-row-3">
-
         <div class="feature-card" data-index="09">
           <div class="feature-meta">
             <span class="feature-num">09</span>
@@ -347,11 +440,11 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">💡</div>
           </div>
-          <h3 class="feature-title">Idea Pitching & Collaboration</h3>
+          <h3 class="feature-title">Pitch ideas. Find collaborators.</h3>
           <p class="feature-tagline">From idea to opportunity</p>
           <ul class="feature-list">
             <li><span class="check">✦</span> Pitch ideas, get feedback, find mentors</li>
-            <li><span class="check">✦</span> Visibility grows with profile rank</li>
+            <li><span class="check">✦</span> Visibility grows with your profile rank</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
@@ -367,15 +460,15 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">💰</div>
           </div>
-          <h3 class="feature-title">Freelancing & Opportunity Matching</h3>
+          <h3 class="feature-title">Earn while you're still in college</h3>
           <p class="feature-tagline">Learn → Build → Earn</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> Profile rank unlocks freelance tasks</li>
-            <li><span class="check">✦</span> PEARL AI recommends opportunities via skill matching</li>
+            <li><span class="check">✦</span> Profile rank unlocks freelance tasks and gig opportunities</li>
+            <li><span class="check">✦</span> PEARL AI matches you to work that fits your verified skills</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
-            <span class="outcome-text">Education converts into income.</span>
+            <span class="outcome-text">Your education converts into real income.</span>
           </div>
         </div>
 
@@ -387,20 +480,92 @@
           <div class="feature-icon-wrap">
             <div class="feature-icon">🔒</div>
           </div>
-          <h3 class="feature-title">Distraction-Free Social Learning</h3>
-          <p class="feature-tagline">Built for focus, not addiction</p>
+          <h3 class="feature-title">A social platform that respects your time</h3>
+          <p class="feature-tagline">No addiction loops. No junk feeds.</p>
           <ul class="feature-list">
-            <li><span class="check">✦</span> No junk content or meaningless scrolling</li>
-            <li><span class="check">✦</span> Every feature aligned to skills, career, and growth</li>
+            <li><span class="check">✦</span> Every feature serves your skills and career — nothing else</li>
+            <li><span class="check">✦</span> Built to help you grow, not to keep you scrolling</li>
           </ul>
           <div class="feature-outcome">
             <span class="outcome-label">Outcome</span>
             <span class="outcome-text">Pure signal. Zero noise.</span>
           </div>
         </div>
-
       </div>
 
+    </div>
+  </section>
+
+  <!-- BUSINESS MODEL -->
+  <section class="biz-section" id="model">
+    <div class="container">
+      <p class="section-eyebrow">Business Model</p>
+      <h2 class="section-title">How <span class="gradient-text">PLARO grows</span></h2>
+      <p class="section-desc">Three revenue streams, two sides of the market, one ecosystem.</p>
+
+      <div class="biz-grid">
+        <div class="biz-card">
+          <div class="biz-tag">Students</div>
+          <span class="biz-icon">🎓</span>
+          <div class="biz-title">Freemium Student Tier</div>
+          <div class="biz-desc">Core features free for all students. Premium tier unlocks advanced Taikens, enhanced portfolio tools, and priority opportunity matching.</div>
+          <div class="biz-revenue">Revenue: Subscriptions + In-app upgrades</div>
+        </div>
+
+        <div class="biz-card biz-card-accent">
+          <div class="biz-tag">Companies</div>
+          <span class="biz-icon">🏢</span>
+          <div class="biz-title">B2B Talent Access</div>
+          <div class="biz-desc">Companies pay to access PLARO's verified talent pool, post opportunities, and search candidates by domain, rank, and simulation scores.</div>
+          <div class="biz-revenue">Revenue: B2B SaaS subscriptions</div>
+        </div>
+
+        <div class="biz-card">
+          <div class="biz-tag">Marketplace</div>
+          <span class="biz-icon">💸</span>
+          <div class="biz-title">Freelance Revenue Share</div>
+          <div class="biz-desc">PLARO takes a platform fee on all freelance and gig transactions completed through the platform's opportunity matching system.</div>
+          <div class="biz-revenue">Revenue: Transaction commission</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <p class="section-eyebrow">The Team</p>
+      <h2 class="section-title">Built by people who <span class="gradient-text">lived the problem</span></h2>
+      <p class="section-desc">We were the students who graduated with good grades but felt unprepared. PLARO is the platform we wished existed.</p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">P</div>
+          <div class="team-name">Founder / CEO</div>
+          <div class="team-role">Vision & Product Strategy</div>
+          <div class="team-bio">Identified the gap between academic learning and industry expectations firsthand. Driving the product vision and growth strategy for PLARO.</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">T</div>
+          <div class="team-name">Co-Founder / CTO</div>
+          <div class="team-role">Technology & AI Architecture</div>
+          <div class="team-bio">Building the PEARL AI engine and Taiken simulation system. Deep expertise in AI/ML and full-stack platform development.</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">D</div>
+          <div class="team-name">Co-Founder / Design</div>
+          <div class="team-role">Product Design & UX</div>
+          <div class="team-bio">Designing experiences that make complex career development feel intuitive and engaging for students across India.</div>
+        </div>
+      </div>
+
+      <div class="team-incubation">
+        <div class="team-incubation-icon">🎓</div>
+        <div class="team-incubation-text">
+          <h4>Incubated at Sri Manakula Vinayagar Engineering College, Puducherry</h4>
+          <p>PLARO is officially supported through the SMVEC incubation centre — giving us access to mentorship, infrastructure, and a direct pipeline to the student community we serve.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -446,6 +611,24 @@
     </div>
   </section>
 
+  <!-- WAITLIST -->
+  <section class="waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="pos-bg">
+        <div class="orb orb-pos-1"></div>
+      </div>
+      <p class="section-eyebrow">Join the Waitlist</p>
+      <h2 class="section-title">Be first when <span class="gradient-text">PLARO launches</span></h2>
+      <p class="section-desc" style="max-width: 500px; margin: 0 auto;">Drop your email and we'll reach out the moment we're live. Students get early access and founding member status.</p>
+
+      <div class="waitlist-form">
+        <input type="email" class="waitlist-input" placeholder="your@email.com" id="waitlist-email" />
+        <a href="#" class="btn btn-primary" onclick="handleWaitlist(event)">Get Early Access</a>
+      </div>
+      <div class="waitlist-count" id="waitlist-msg">Join students already on the list.</div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -456,8 +639,10 @@
         </div>
         <div class="footer-links">
           <a href="about.html">About</a>
-          <a href="index.html#features">Features</a>
-          <a href="index.html#taiken">Taiken</a>
+          <a href="#features">Features</a>
+          <a href="#taiken">Taiken</a>
+          <a href="#model">Business Model</a>
+          <a href="#team">Team</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
@@ -470,6 +655,28 @@
   </footer>
 
   <script src="main.js"></script>
+  <script>
+    // Audience tab switcher
+    function switchTab(tab) {
+      document.querySelectorAll('.audience-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.audience-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('panel-' + tab).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // Waitlist form
+    function handleWaitlist(e) {
+      e.preventDefault();
+      const email = document.getElementById('waitlist-email').value;
+      if (!email || !email.includes('@')) {
+        document.getElementById('waitlist-msg').textContent = 'Please enter a valid email address.';
+        return;
+      }
+      document.getElementById('waitlist-msg').innerHTML = '✅ You\'re on the list! We\'ll be in touch soon.';
+      document.getElementById('waitlist-email').value = '';
+      document.getElementById('waitlist-email').disabled = true;
+    }
+  </script>
 </body>
 
 </html>
