@@ -55,7 +55,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   cards.forEach(card => observer.observe(card));
 
-  // -------- SECTION INTRO REVEAL --------
+  // -------- GENERAL REVEAL OBSERVER --------
+  const revealElements = document.querySelectorAll('.reveal, .reveal-fade, .reveal-scale');
+
+  const mainRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        mainRevealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  revealElements.forEach(el => mainRevealObserver.observe(el));
+
+  // -------- SECTION INTRO REVEAL (Legacy Custom fallback) --------
   const sectionIntro = document.querySelector('.section-intro');
   const posSection = document.querySelector('.positioning-section');
 
